@@ -39,7 +39,7 @@ import UIKit
     @objc open var thumbnailImage: UIImage?
     @objc open var isDeletable: Bool
     
-    var imageURL: URL?
+    @objc open var imageURL: URL?
     var thumbnailImageURL: URL?
     
     @objc open var attributedTitle: NSAttributedString?
