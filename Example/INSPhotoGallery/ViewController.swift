@@ -55,6 +55,8 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
         let cell = collectionView.cellForItem(at: indexPath) as! ExampleCollectionViewCell
         let currentPhoto = photos[(indexPath as NSIndexPath).row]
         let galleryPreview = INSPhotosViewController(photos: photos, initialPhoto: currentPhoto, referenceView: cell)

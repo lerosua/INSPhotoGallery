@@ -26,6 +26,8 @@ import UIKit
 @objc public protocol INSPhotoViewable: class {
     var image: UIImage? { get }
     var thumbnailImage: UIImage? { get }
+    var videoURL: URL? { get }
+
     @objc optional var isDeletable: Bool { get }
     
     func loadImageWithCompletionHandler(_ completion: @escaping (_ image: UIImage?, _ error: Error?) -> ())
@@ -35,12 +37,14 @@ import UIKit
 }
 
 @objc open class INSPhoto: NSObject, INSPhotoViewable {
+    public var videoURL: URL?
+    
     @objc open var image: UIImage?
     @objc open var thumbnailImage: UIImage?
     @objc open var isDeletable: Bool
     
-    @objc open var imageURL: URL?
-    @objc open var thumbnailImageURL: URL?
+    var imageURL: URL?
+    var thumbnailImageURL: URL?
     
     @objc open var attributedTitle: NSAttributedString?
     

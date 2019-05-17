@@ -11,6 +11,8 @@ import Kingfisher
 import INSPhotoGalleryFramework
 
 class CustomPhotoModel: NSObject, INSPhotoViewable {
+    var videoURL: URL?
+    
     var image: UIImage?
     var thumbnailImage: UIImage?
     var isDeletable: Bool {

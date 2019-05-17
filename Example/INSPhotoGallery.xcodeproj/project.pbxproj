@@ -31,6 +31,10 @@
 		D2EF36201CB299CF00033131 /* CustomOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2EF361F1CB299CF00033131 /* CustomOverlayView.xib */; };
 		D2EF36221CB29C6600033131 /* CustomPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EF36211CB29C6600033131 /* CustomPhotoModel.swift */; };
 		D2EF36241CB2A67800033131 /* CustomModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EF36231CB2A67800033131 /* CustomModelViewController.swift */; };
+		E9D90329228EB7E4003C2970 /* CTVideoPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D90325228EB7E3003C2970 /* CTVideoPhotoViewController.swift */; };
+		E9D9032A228EB7E4003C2970 /* CTGalleryOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D90326228EB7E3003C2970 /* CTGalleryOverlayView.swift */; };
+		E9D9032B228EB7E4003C2970 /* CTGalleryPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D90327228EB7E4003C2970 /* CTGalleryPhoto.swift */; };
+		E9D9032C228EB7E4003C2970 /* CTGalleryOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D90328228EB7E4003C2970 /* CTGalleryOverlayView.xib */; };
 		FB44620B1AE393EEB9BC3649 /* Pods_INSPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043F1D6415A9A5BC7A90DF71 /* Pods_INSPhotoGallery.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,11 @@
 		D2EF361F1CB299CF00033131 /* CustomOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlayView.xib; sourceTree = "<group>"; };
 		D2EF36211CB29C6600033131 /* CustomPhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoModel.swift; sourceTree = "<group>"; };
 		D2EF36231CB2A67800033131 /* CustomModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModelViewController.swift; sourceTree = "<group>"; };
+		E9D90325228EB7E3003C2970 /* CTVideoPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTVideoPhotoViewController.swift; sourceTree = "<group>"; };
+		E9D90326228EB7E3003C2970 /* CTGalleryOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTGalleryOverlayView.swift; sourceTree = "<group>"; };
+		E9D90327228EB7E4003C2970 /* CTGalleryPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTGalleryPhoto.swift; sourceTree = "<group>"; };
+		E9D90328228EB7E4003C2970 /* CTGalleryOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTGalleryOverlayView.xib; sourceTree = "<group>"; };
+		E9D9032D228EB7EC003C2970 /* splash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splash.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +180,7 @@
 		D2EF35F31CB288F300033131 /* INSPhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				E9D9032D228EB7EC003C2970 /* splash.mp4 */,
 				D2EF36251CB2A74300033131 /* Supported Files */,
 				D2EF35F61CB288F300033131 /* ViewController.swift */,
 				D2EF35F81CB288F300033131 /* Main.storyboard */,
@@ -180,6 +190,10 @@
 				D2EF361F1CB299CF00033131 /* CustomOverlayView.xib */,
 				D2EF36211CB29C6600033131 /* CustomPhotoModel.swift */,
 				D2EF36231CB2A67800033131 /* CustomModelViewController.swift */,
+				E9D90326228EB7E3003C2970 /* CTGalleryOverlayView.swift */,
+				E9D90328228EB7E4003C2970 /* CTGalleryOverlayView.xib */,
+				E9D90327228EB7E4003C2970 /* CTGalleryPhoto.swift */,
+				E9D90325228EB7E3003C2970 /* CTVideoPhotoViewController.swift */,
 			);
 			path = INSPhotoGallery;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 					};
 					D2EF35F01CB288F300033131 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = F247V288VF;
 						LastSwiftMigration = 1020;
 					};
 				};
@@ -302,6 +317,7 @@
 			files = (
 				D2EF35FF1CB288F300033131 /* LaunchScreen.storyboard in Resources */,
 				D2EF35FC1CB288F300033131 /* Assets.xcassets in Resources */,
+				E9D9032C228EB7E4003C2970 /* CTGalleryOverlayView.xib in Resources */,
 				D2EF36201CB299CF00033131 /* CustomOverlayView.xib in Resources */,
 				D2EF35FA1CB288F300033131 /* Main.storyboard in Resources */,
 			);
@@ -375,8 +391,11 @@
 				D2EF36221CB29C6600033131 /* CustomPhotoModel.swift in Sources */,
 				D2EF361E1CB2998200033131 /* CustomOverlayView.swift in Sources */,
 				D2EF361C1CB2984C00033131 /* TableViewController.swift in Sources */,
+				E9D9032A228EB7E4003C2970 /* CTGalleryOverlayView.swift in Sources */,
+				E9D90329228EB7E4003C2970 /* CTVideoPhotoViewController.swift in Sources */,
 				D2EF36241CB2A67800033131 /* CustomModelViewController.swift in Sources */,
 				D2EF361A1CB28B8400033131 /* ExampleCollectionViewCell.swift in Sources */,
+				E9D9032B228EB7E4003C2970 /* CTGalleryPhoto.swift in Sources */,
 				D2EF35F51CB288F300033131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +591,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F247V288VF;
 				INFOPLIST_FILE = INSPhotoGallery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -588,6 +608,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F247V288VF;
 				INFOPLIST_FILE = INSPhotoGallery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
